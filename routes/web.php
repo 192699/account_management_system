@@ -24,18 +24,18 @@ Route::get('/', function () {
 // Route::post('login', [AuthController::class, 'login']);
 
 // // Protected routes
-Route::middleware('auth:sanctum')->group(function () {
-    // Auth
-    Route::post('logout', [AuthController::class, 'logout']);
+// Route::middleware('auth:sanctum')->group(function () {
+//     // Auth
+//     Route::post('logout', [AuthController::class, 'logout']);
 
-    // Account routes
-    Route::post('accounts', [AccountController::class, 'store']);
-    Route::get('accounts/{account_number}', [AccountController::class, 'show']);
-    Route::put('accounts/{account_number}', [AccountController::class, 'update']);
-    Route::delete('accounts/{account_number}', [AccountController::class, 'destroy']);
+//     // Account routes
+//     Route::post('accounts', [AccountController::class, 'store']);
+//     Route::get('accounts/{account_number}', [AccountController::class, 'show']);
+//     Route::put('accounts/{account_number}', [AccountController::class, 'update']);
+//     Route::delete('accounts/{account_number}', [AccountController::class, 'destroy']);
 
-    // Transaction routes
-    Route::post('transactions', [TransactionController::class, 'store']);
-    Route::get('transactions', [TransactionController::class, 'index']);
-});
+//     // Transaction routes
+//     Route::post('transactions', [TransactionController::class, 'store']);
+//     Route::get('transactions', [TransactionController::class, 'index']);
+// });
 // Route::resource('accounts', AccountController::class);
